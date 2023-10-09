@@ -16,11 +16,17 @@ pipeline {
                 sh 'cd example_app && pwd && npm install'
             }
         }
+        stage('Testing') {
+            steps {
+                sh './scripts/test.sh'
+                input message: 'Continue? (Click "Proceed" to continue)'
+            }
+        }
         stage('Deliver') {
             steps {
                 sh './scripts/deliver.sh'
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                sh 'echo .pidfile && cat .pidfile && ./scripts/kill.sh'
+                sh 'cat .pidfile && ./scripts/kill.sh'
             }
         }
     }
