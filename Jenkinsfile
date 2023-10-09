@@ -19,13 +19,11 @@ pipeline {
         stage('Testing') {
             steps {
                 sh './scripts/test.sh'
-                input message: 'Continue? (Click "Proceed" to continue)'
             }
         }
         stage('Deliver') {
             steps {
                 sh './scripts/deliver.sh'
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 sh 'cat .pidfile && ./scripts/kill.sh'
             }
         }
