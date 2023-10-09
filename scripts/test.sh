@@ -22,4 +22,6 @@ pwd
 cd .. 
 echo 'Ora sei nella cartella : '
 pwd
+echo 'che ha come cartelle : '
+ls
 npm test
