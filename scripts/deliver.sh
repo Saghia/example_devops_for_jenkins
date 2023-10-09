@@ -22,6 +22,8 @@ set -x
 npm start &
 sleep 1
 echo $! > .pidfile
+pid=cat .pidfile
+echo $pid
 set +x
 
 echo 'Now...'
