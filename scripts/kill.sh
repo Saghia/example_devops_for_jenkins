@@ -4,13 +4,10 @@ echo 'The following command terminates the "npm start" process using its PID'
 echo '(written to ".pidfile"), all of which were conducted when "deliver.sh"'
 echo 'was executed.'
 set -x
-echo $(cat .pidfile)
-echo '--- ATTENZIONE ---'
-echo $pid
 
 kill -9 $(ps pid,tty,time | grep -e "npm start" | grep -v "grep" | awk '{print $1}')
 
-sleep 5s
+sleep 10s
 ps pid,tty,time | grep -e "npm start"
 
 # pid=$(cat .pidfile)
