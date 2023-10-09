@@ -19,6 +19,7 @@ echo 'runner Jest (https://facebook.github.io/jest/).'
 set -x
 echo 'Prima sei nella cartella : '
 pwd
+ls
 cd .. 
 echo 'Ora sei nella cartella : '
 pwd
