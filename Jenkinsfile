@@ -13,8 +13,7 @@ pipeline {
         }
         stage('Build') { 
             steps {
-                sh 'cd example_app'
-                sh 'npm install'
+                sh 'cd example_app && pwd && npm install'
             }
         }
 
