@@ -17,6 +17,9 @@ echo 'The following "npm" command tests that your simple Node.js/React'
 echo 'application renders satisfactorily. This command actually invokes the test'
 echo 'runner Jest (https://facebook.github.io/jest/).'
 set -x
+echo 'Prima sei nella cartella : '
 pwd
-cd ../example_app
+cd .. 
+echo 'Ora sei nella cartella : '
+pwd
 npm test
