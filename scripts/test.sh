@@ -21,4 +21,6 @@ echo 'Prima sei nella cartella : '
 pwd
 ls
 cd /example_app
+pwd
+ls
 npm test
