@@ -12,7 +12,7 @@ pipeline {
                 sh 'pwd'
             }
         }
-        stage('print message') {
+        stage('Test') {
             steps {
                 echo 'example message saghia'
             }
