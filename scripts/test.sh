@@ -20,9 +20,5 @@ set -x
 echo 'Prima sei nella cartella : '
 pwd
 ls
-cd .. 
-echo 'Ora sei nella cartella : '
-pwd
-echo 'che ha come cartelle : '
-ls
+cd /example_app
 npm test
