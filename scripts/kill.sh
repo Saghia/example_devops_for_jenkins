@@ -9,6 +9,8 @@ echo '--- ATTENZIONE ---'
 echo $pid
 
 kill $(ps pid,tty,time | grep -e "npm start" | grep -v "grep" | awk '{print $1}')
+
+sleep 5s
 ps pid,tty,time | grep -e "npm start"
 
 # pid=$(cat .pidfile)
