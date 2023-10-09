@@ -8,7 +8,7 @@ echo $(cat .pidfile)
 echo '--- ATTENZIONE ---'
 echo $pid
 
-ps pid,tty,time | grep -e "npm start" | awk '{print $1}'
+ps pid,tty,time | grep -e "npm start" | grep -v "grep" | awk '{print $1}'
 
 # pid=$(cat .pidfile)
 # if [ -n "$pid" ]; then
