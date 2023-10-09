@@ -20,7 +20,7 @@ set -x
 echo 'Prima sei nella cartella : '
 pwd
 ls
-cd /example_app
+cd example_app
 pwd
 ls
 npm test
