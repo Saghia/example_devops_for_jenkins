@@ -8,7 +8,7 @@ echo $(cat .pidfile)
 echo '--- ATTENZIONE ---'
 echo $pid
 
-ps -o pid,tty,time,cmd
+ps pid,tty,time
 
 # pid=$(cat .pidfile)
 # if [ -n "$pid" ]; then
