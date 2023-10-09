@@ -8,7 +8,7 @@ echo $(cat .pidfile)
 echo '--- ATTENZIONE ---'
 echo $pid
 
-ps pid,tty,time
+ps pid,tty,time | grep npm
 
 # pid=$(cat .pidfile)
 # if [ -n "$pid" ]; then
